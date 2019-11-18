@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 20px;
+}
+.robotoFont {
+  font-family: "Roboto", sans-serif;
+}
+.ralewayFont {
+  font-family: "Raleway", sans-serif;
+}
+header {
+  display: grid;
+  grid-template-columns: 100vw;
+  height: 100px;
+  background-color: #706381;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+.content {
+  display: grid;
+  grid-template-columns: 66vw 21vw;
+  height: auto;
+  padding: 20px 5vw;
+  grid-gap: 30px;
+}
+.currentFriends {
+  display: grid;
+}
+.friend {
+  padding-right: 2vw;
+}
+.current {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.moreFriends {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.currentTitle {
+  padding: 20px 0;
+}
+.userPic {
+  width: 5vw;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.nameCurrent {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.descCurrent {
+  font-size: 0.7rem;
+}
+.button {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  margin-top: 10px;
+}
+.viewMore {
+  width: 10vw;
+  height: 2.5vw;
+  background-color: #f7de1c;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.suggestionsTitle {
+  padding: 30px 0 20px 0;
+}
+.suggest {
+  display: grid;
+  grid-template-columns: 100%;
+}
+.newSuggest {
+  display: grid;
+  grid-template-columns: 100%;
+}
+.suggestedUser {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-items: start;
+  padding: 1vh 0 1vh 0;
+  border-bottom: 1px solid #e8e7e4;
+}
+.suggestedDesc {
+  padding-left: 6%;
+  width: 94%;
+}
+.userPicSugg {
+  width: 6vw;
+  border-radius: 15px;
+  z-index: -1;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+.userDescSugg {
+  font-size: 0.8rem;
+}
+.ignore {
+  text-align: end;
+  font-size: 0.6rem;
+}
+.commonFriends {
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+}
+.ignoreLink {
+  text-decoration: none;
+}
+.suggestedName {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.ignoreLink {
+  color: black;
+}
+.ignoreLink:hover {
+  color: #f7de1c;
+}
+.suggestionsViewMore {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  height: 14vh;
+}
+.SuggViewMore {
+  color: #f7de1c;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.SuggViewMore:hover {
+  text-decoration: underline;
+}
+.search {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+}
+input {
+  border-radius: 5px;
+  width: 100%;
+  height: 2vh;
+  padding: 8px;
+  border: 1px #e8e7e4 solid;
+}
+.input {
+  font-weight: 0.9;
+}
+.searchIcon {
+  width: 20px;
+}
+.suggestUser {
+  display: grid;
+  grid-template-columns: 70% 35%;
+  grid-template-rows: 30% 70%;
+}
+.suggestUser > a:nth-child(1) {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  z-index: 1;
+  justify-self: end;
+  align-self: baseline;
+}
+.suggestUser > img:nth-child(2) {
+  display: grid;
+  grid-column: 1 / 3;
+}
+.add {
+  width: 18px;
+  z-index: 2;
+}
+.popup {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.popup .popuptext {
+  z-index: 6;
+  visibility: hidden;
+  width: 16vw;
+  height: 35vh;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 10px;
+  position: absolute;
+  margin-left: -260px;
+  border-right: 2px solid #706381;
+}
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.more {
+  display: none;
+}
+
+.more1 {
+  display: none;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

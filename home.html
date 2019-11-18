@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="home.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylenav.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navPrincipal">
+    <div class="logoAplicacion">
+      <a href="home.html"><img src="images/logo.png" alt="Logo She Codes App"></a>
+    </div>
+    <div class="menuPrincipal">
+      <ul>
+        <li class="navA"><i class="fas fa-paper-plane"></i><a href="">Mensajes</a></li>
+        <li class="navA"><i class="fas fa-user-friends"></i><a href="amigos.html">Amigos</a></li>
+      </ul>
+    </div>
+    <div class="perfilUsuario">
+      <div class="nombreUsuario navA">
+        <a id="usuario" href="#">Nombre de Usuario</a>
+      </div>
+      <div class="imagenPerfil">
+        <img src="img/joe-gardner-fn_BT9fwg_E-unsplash.jpg" alt="Perfil Usuario" onclick="cerrarSesion()">
+        <div class="dropdown navA" id="lista">
+          <a href="perfil.html">Perfil</a>
+          <br>
+          <a href="index.html">Cerrar sesion</a>
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </nav>
+  <div class="menuResponsive">
+    <ul>
+      <li class="navA"><i class="fas fa-paper-plane"></i><a href="#">Mensajes</a></li>
+      <li class="navA"><i class="fas fa-user-friends"></i><a href="#">Amigos</a></li>
+      <li class="navA"><i class="fas fa-user"></i><a href="#">perfil</a></li>
+    </ul>
+  </div>
+
+  </header>
+  <div class="padre">
+    <div class="panelIzquierda" id="panelIzquierda">
+      <input type="search" id="inputBuscarGrupo" placeholder="Buscar grupo por nombre" />
+      <div class="grupoEnPanel" id="grupoEnPanel">
+        <div class="divGrupo" id="divGrupo">
+          <img class="logo" src="" id="logo">
+          <div class="divNombre" id="divNombre"></div>
+        </div>
+      </div>
+    </div>
+    <div class="panelCentro" id="panelCentro">
+
+      <div class="centroAbajo">
+        <input type="text" name="casilla" class="nuevaPublicacion" placeholder="ingresa una nueva Publicacion"
+          id="nuevaPublicacion" />
+        <button id="anadir" onclick="nuevaPublicacion()">
+          Añade tu Publicacion
+        </button>
+      </div>
+      <div class="panelCentroArriba" id="panelCentroArriba">
+        <div class="divPublicacion" id="inicial">
+          <img class="divUserLogo" src="" id="divUserLogo">
+          <div class="divUsername" id="divUsername"></div>
+          <div class="divDate" id="divDate"></div>
+          <img class="divImage" scr="" id="divImage">
+          <div class="divContent" id="divContent"></div>
+        </div>
+      </div>
+
+
+      <!-- <button onclick="refrescarPanelIzquierda()">
+          Refrescar panel izquierda
+        </button> -->
+    </div>
+    <div class="panelDerecha" id="panelDerecha">
+      <img class="logoDerecha" id="logoDerecha"></img>
+      <div class="divNombreDerecha" id="divNombreDerecha"></div>
+      <div class="divMiembros" id="divMiembros"></div>
+      <div class="divDescripcion" id="divDescripcion"></div>
+      <button class="seguir" id="seguir" onclick="dejarDeSeguir()" style="display:none" value="false">Dejar de
+        Seguir</button>
+    </div>
+  </div>
+  <script src="javascript/app.js"></script>
+  <script src="home.js"></script>
+</body>
+
+</html>

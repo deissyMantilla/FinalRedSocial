@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+/* Generales */
+html,
+body,
+.menuPrincipal ul,
+.menuPrincipal li,
+.menuResponsive ul,
+.menuResponsive li {
+  margin: 0;
+}
+
+/* Nav Principal  */
+.navPrincipal {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  position: sticky;
+  top: 0;
+}
+
+/* Sesion Logo  */
+.logoAplicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoAplicacion img {
+  height: 50px;
+}
+
+.menuPrincipal,
+.logoAplicacion {
+  height: 100px;
+  background: #706381;
+}
+
+/* Sesion Menu  */
+.menuPrincipal ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  height: inherit;
+}
+
+.menuPrincipal ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #706381 8px solid;
+  padding: 0 20px;
+  height: inherit;
+}
+
+.menuPrincipal li:hover a,
+.menuPrincipal li:hover i,
+.menuPrincipal li:active a,
+.menuPrincipal li:active i {
+  color: #f7de1c;
+}
+
+.menuPrincipal ul li:hover,
+.menuPrincipal ul li:active {
+  border-bottom: #f7de1c 8px solid;
+}
+
+.navA a,
+i {
+  text-decoration: none;
+  color: #e8e7e7;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* Sesion Perfil  */
+
+.perfilUsuario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5f5073;
+  height: 100%;
+}
+
+.imagenPerfil img {
+  border-radius: 50%;
+  height: 60px;
+  margin-left: 30px;
+}
+
+/* otras sesiones  */
+
+.menuResponsive {
+  display: none;
+}
+
+/* media queries  */
+
+@media (max-width: 991px) {
+  /* nav principal  */
+  .navPrincipal {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  /* sesion logo  */
+
+  .logoAplicacion {
+    height: 75px;
+  }
+
+  .logoAplicacion img {
+    border-radius: 30px;
+  }
+
+  /* sesion menu responsive  */
+
+  .menuResponsive {
+    display: block;
+    position: sticky;
+    top: 0;
+  }
+
+  .menuResponsive ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #5f5073;
+  }
+  .menuResponsive li {
+    padding: 5px;
+    height: 50px;
+    flex-basis: 100%;
+    border-bottom: #5f5073 4px solid;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menuResponsive li:hover,
+  .menuResponsive li:active {
+    border-bottom: #f7de1c 4px solid;
+  }
+  .navA a,
+  i {
+    font-size: 12px;
+  }
+
+  .menuResponsive li:hover a,
+  .menuResponsive li:hover i,
+  .menuResponsive li:active a,
+  .menuResponsive li:active i {
+    color: #f7de1c;
+  }
+
+  /* otras sesiones  */
+
+  .menuPrincipal,
+  .perfilUsuario {
+    display: none;
+  }
+}

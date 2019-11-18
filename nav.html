@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nav SCA</title>
+    <link rel="stylesheet" href="css/styleNav.css">
+    <script src="https://kit.fontawesome.com/437e0fb374.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700|Roboto:400,500,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navPrincipal">
+        <div class="logoAplicacion">
+           <a href="home.html"><img src="images/logo.png" alt="Logo She Codes App" ></a> 
+        </div>
+        <div class="menuPrincipal">
+            <ul>
+                <li class="navA"><i class="fas fa-paper-plane"></i><a href="">Mensajes</a></li>
+                <li class="navA"><i class="fas fa-user-friends"></i><a href="amigos.html">Amigos</a></li>
+            </ul>
+        </div>
+        <div class="perfilUsuario">
+            <div class="nombreUsuario navA">
+                <a id="usuario" href="#">Nombre de Usuario</a>
+            </div>
+            <div class="imagenPerfil">
+                <img src="images/Usuario.png" alt="Perfil Usuario" onclick="cerrarSesion()">
+                <div class="dropdown navA" id="lista">
+                    <a href="perfil.html">Perfil</a>
+                    <br>
+                    <a href="index.html">Cerrar sesion</a>
+
+                </div>
+
+
+                
+            </div>
+        </div>
+
+    </nav>
+    <div class="menuResponsive">
+        <ul>
+            <li class="navA"><i class="fas fa-paper-plane"></i><a href="#">Mensajes</a></li>
+            <li class="navA"><i class="fas fa-user-friends"></i><a href="#">Amigos</a></li>
+            <li class="navA"><i class="fas fa-user"></i><a href="#">perfil</a></li>
+        </ul>
+    </div>
+
+    <script src="javascript/app.js"></script>
+</body>
+
+</html>
